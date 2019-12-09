@@ -12,12 +12,12 @@ int LargestNumber(std::list<int> numbers) {
     // This is finds largest number in a list
 
     int lastNumber = 0;
-    int largest;
+    int largest = 0;
 
     for (int number : numbers) {
         if (number > lastNumber) {
             largest = number;
-        lastNumber = number;
+            lastNumber = number;
         }
     }
     return largest;
@@ -41,9 +41,8 @@ main() {
         numbers.push_back(number);
         // output
         std::cout << number << std::endl;
-        largest = LargestNumber(numbers);
     }
-
+    largest = LargestNumber(numbers);
 
     // output
     std::cout << "\nThe largest is " << largest << std::endl;
